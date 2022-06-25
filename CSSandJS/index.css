@@ -1,0 +1,648 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: #1c2632;
+}
+
+@font-face {
+    font-family: 'Righteous';
+    src: url("/fonts/Righteous-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Paytone One';
+    src: url("/fonts/PaytoneOne-Regular.ttf");
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(250, 250, 245);
+    color: #232a34;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+    display:flex;
+}
+
+.left {
+    display: flex;
+    margin-left: 80px;
+}
+
+.navbar a {
+    display: flex;
+    color: #607d8b;
+    padding: 30px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition-duration: 0.15s;
+    flex-shrink:1;
+}
+
+.navbar a:hover {
+    background-color: rgb(219, 219, 212);
+}
+
+.homeicon {
+    padding-right:10px;
+    height: 15px;
+}   
+
+.aboutmeicon {
+    position: relative;
+    padding-right:10px;
+    height: 18px;
+    top: -1px;
+}
+
+.projecticon {
+    padding-right:10px;
+    height: 18px;
+}
+
+.contacticon {
+    padding-right:10px;
+    height: 19px;
+}
+
+.nav_spacer {
+    flex-grow:1;
+}
+
+.lang {
+    margin-right: 80px;
+}
+
+.invisible-anchor {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+
+.lightest-blue {
+    background-color: #213c60;
+    color: white !important;
+    padding-top: 1px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+.lighter-blue {
+    background-color: #132a4a;
+    color: white !important;
+    padding-top: 1px;
+    padding-bottom: 80px;
+}
+
+.dark-blue {
+    background-color: #102032;
+    color: white !important;
+    padding-top: 1px;
+    bottom: 0;
+    padding-bottom: 80px;
+}
+
+.rana {
+    font-size: 2.8em;
+    font-family: 'Righteous' !important;
+    font-weight: 300;
+    margin-left: 80px;
+    margin-top: 140px;
+    margin-bottom: -10px;
+    display: inline-block;
+}
+
+.flower {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: -6px;
+    width: 45px
+}
+
+.text {
+    margin-left: 80px;
+    max-width: 650px;
+    line-height: 2;
+}
+
+.about {
+    font-family: 'Paytone One';
+    font-size: 2em;
+    font-weight: 300;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.picturecollage {
+    position: relative;
+    margin-left: 1025px;
+}
+
+.pictureone {
+    width: 200px;
+    position: absolute;
+    left: 170px;
+    top: -140px;
+    border-radius: 10px;
+    border: 8px solid #f4ad24;
+    transition-duration: 0.3s;
+}
+
+.picturetwo {
+    width: 200px;
+    position: absolute;
+    top: -230px;
+    left: -10px;
+    border-radius: 10px;
+    border: 8px solid #f4ad24;
+    transition-duration: 0.3s;
+}
+
+.picturethree {
+    width: 200px;
+    position: absolute;
+    z-index: 150;
+    left: 30px;
+    top: -10px;
+    border-radius: 10px;
+    border: 8px solid #f4ad24;
+    transition-duration: 0.3s;
+}
+
+.picturefour {
+    width: 200px;
+    position: absolute;
+    top: 25px;
+    left: -150px;
+    z-index: 125;
+    border-radius: 10px;
+    border: 8px solid #f4ad24;
+    transition-duration: 0.3s;
+}
+
+.picturefive {
+    width: 200px;
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    z-index: 100;
+    border-radius: 10px;
+    border: 8px solid #f4ad24;
+    transition-duration: 0.3s;
+}
+
+.experience {
+    font-size: 1.5em;
+    font-family: 'Paytone One';
+    font-weight: 300;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.projects {
+    font-size: 1.5em;
+    font-family: 'Paytone One';
+    font-weight: 300;
+    margin-left: 80px;
+    margin-top: 3em;
+}
+
+.contact {
+    font-size: 1.5em;
+    font-family: 'Paytone One';
+    font-weight: 300;
+    margin-left: 80px;
+    margin-top: 3em;
+}
+
+.about-me {
+    line-height: 2;
+}
+
+.CV {
+    background-color: #f4ad24;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    margin-left: 80px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition-duration: 0.15s;
+    display: inline-block
+}
+
+.cvicon {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: -4.5px;
+}
+
+.html {
+    float: left;
+    display: flex;
+    align-items: center;
+    background-color: #f4ad24;
+    color: white;
+    height: 60px;
+    width: 120px;
+    border-radius: 10px;
+    margin-right: 8px;
+    margin-left: 80px;
+    transition-duration: 0.15s;
+}
+
+.html-logo {
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.css {
+    float: left;
+    display: flex;
+    align-items: center;
+    background-color: #f4ad24;
+    color: white;
+    height: 60px;
+    width: 120px;
+    border-radius: 10px;
+    margin-right: 8px;
+    transition-duration: 0.15s;
+}
+
+.css-logo {
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 23px;
+}
+
+.javascript {
+    display: flex;
+    align-items: center;
+    background-color: #f4ad24;
+    color: white;
+    height: 60px;
+    width: 160px;
+    border-radius: 10px;
+    margin-right: 8px;
+    transition-duration: 0.15s;
+}
+
+.javascript-logo {
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 22px;
+}
+
+.python {
+    float: left;
+    display: flex;
+    align-items: center;
+    background-color: #f4ad24;
+    color: white;
+    height: 60px;
+    width: 130px;
+    border-radius: 10px;
+    margin-right: 8px;
+    transition-duration: 0.15s;
+}
+
+.python-logo {
+    width: 27px;
+    margin-right: 10px;
+    margin-left: 21px;
+}
+
+.projectbox {
+    background-color: #f4ad24;
+    color: white;
+    border-radius: 10px;
+    display:inline-block;
+    width: 150px;
+    height: 180px;
+    text-align:center;
+    text-decoration: none;
+    padding-top:20px;
+    margin-left: 80px;
+    vertical-align: top;
+    margin-right: -74px;
+    transition-duration: 0.15s;
+}
+
+.projectbox img {
+    display: block;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.boxhead {
+    font-weight: bold;
+    display: block;
+}
+
+.boxtext {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.socialbox {
+    background-color: #f4ad24;
+    border-radius: 10px;
+    display:inline-block;
+    width: 70px;
+    height: 70px;
+    text-align:center;
+    text-decoration: none;
+    margin-left: 80px;
+    vertical-align: top;
+    margin-right: -74px;
+    transition-duration: 0.15s;
+}
+
+.socialbox img {
+    display: block;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+
+.emailicon {
+    height: 23px !important;
+    margin-top: 23px !important;
+}
+
+@media (hover: hover) {
+    .pictureone:hover {
+        border: 8px solid #f57b00;
+        transform: scale(1.1);
+    }
+
+    .picturetwo:hover {
+        border: 8px solid #f57b00;
+        transform: scale(1.1);
+    }
+
+    .picturethree:hover {
+        border: 8px solid #f57b00;
+        transform: scale(1.1);
+    }
+
+    .picturefour:hover {
+        border: 8px solid #f57b00;
+        transform: scale(1.1);
+    }
+
+    .picturefive:hover {
+        border: 8px solid #f57b00;
+        transform: scale(1.1);
+    }
+
+    .CV:hover {
+        box-shadow: 0px 0px 0px 3px #f57b00;
+        background: #f57b00;
+    }
+
+    .html:hover {
+        box-shadow: 0px 0px 0px 3px #f57b00;
+        background: #f57b00;
+    }
+
+    .css:hover {
+        box-shadow: 0px 0px 0px 3px #f57b00;
+        background: #f57b00;
+    }
+
+    .javascript:hover {
+        box-shadow: 0px 0px 0px 3px #f57b00;
+        background: #f57b00;
+    }
+
+    .python:hover {
+        box-shadow: 0px 0px 0px 3px #f57b00;
+        background: #f57b00;
+    }
+
+    .projectbox:hover {
+        box-shadow: 0px 0px 0px 3px #f57b00;
+        background: #f57b00;
+    }
+
+    .socialbox:hover {
+        box-shadow: 0px 0px 0px 3px #f57b00;
+        background: #f57b00;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar {
+        display: none;
+    }
+
+    .rana {
+        font-size: 1.8em;
+        font-family: 'Righteous' !important;
+        font-weight: 300;
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: -10px;
+        display: inline-block;
+    }
+
+    .flower {
+        margin-left: 2px;
+        display: inline-block;
+        vertical-align: -5px;
+        width: 30px
+    }
+
+    .text {
+        margin-left: 30px;
+        max-width: 420px;
+        line-height: 1.5;
+    }
+
+    .about {
+        font-family: 'Paytone One';
+        font-size: 1.4em;
+        font-weight: 300;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .picturecollage {
+        display: none;
+    }
+
+    .CV {
+        background-color: #f4ad24;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        font-size: 0.9em;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-radius: 10px;
+        transition-duration: 0.15s;
+        display: inline-block
+    }
+    
+    .cvicon {
+        width: 20px;
+        margin-right: 10px;
+        vertical-align: -4.5px;
+    }
+    
+    .CV:active {
+        background: #f57b00 !important;
+    }
+
+    .experience {
+        font-size: 1.4em;
+        font-family: 'Paytone One';
+        font-weight: 300;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    
+    .projects {
+        font-size: 1.4em;
+        font-family: 'Paytone One';
+        font-weight: 300;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    
+    .contact {
+        font-size: 1.4em;
+        font-family: 'Paytone One';
+        font-weight: 300;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .dark-blue {
+        background-color: #102032;
+        color: white !important;
+        bottom: 0;
+        padding-bottom: 30px;
+    }
+
+    .html {
+        float: left;
+        display: flex;
+        align-items: center;
+        background-color: #f4ad24;
+        color: white;
+        height: 60px;
+        width: 120px;
+        border-radius: 10px;
+        margin-right: 8px;
+        margin-left: 30px;
+        transition-duration: 0.15s;
+    }
+    
+    .html-logo {
+        width: 25px;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    .css {
+        float: left;
+        display: flex;
+        align-items: center;
+        background-color: #f4ad24;
+        color: white;
+        height: 60px;
+        width: 120px;
+        border-radius: 10px;
+        margin-right: 8px;
+        transition-duration: 0.15s;
+    }
+    
+    .css-logo {
+        width: 25px;
+        margin-right: 10px;
+        margin-left: 23px;
+    }
+    
+    .javascript {
+        display: flex;
+        align-items: center;
+        background-color: #f4ad24;
+        color: white;
+        height: 60px;
+        width: 160px;
+        border-radius: 10px;
+        margin-right: 8px;
+        margin-left: 30px;
+        margin-top: 50px;
+        transition-duration: 0.15s;
+    }
+    
+    .javascript-logo {
+        width: 25px;
+        margin-right: 10px;
+        margin-left: 22px;
+    }
+    
+    .python {
+        display: flex;
+        align-items: center;
+        background-color: #f4ad24;
+        color: white;
+        height: 60px;
+        width: 130px;
+        border-radius: 10px;
+        margin-right: 8px;
+        transition-duration: 0.15s;
+    }
+    
+    .python-logo {
+        width: 27px;
+        margin-right: 10px;
+        margin-left: 21px;
+    }
+
+    .projectbox {
+        background-color: #f4ad24;
+        color: white;
+        border-radius: 10px;
+        display:inline-block;
+        width: 150px;
+        height: 180px;
+        text-align:center;
+        text-decoration: none;
+        padding-top:20px;
+        margin-left: 30px;
+        vertical-align: top;
+        margin-right: -25px;
+        transition-duration: 0.15s;
+    }
+
+    .socialbox {
+        background-color: #f4ad24;
+        border-radius: 10px;
+        display:inline-block;
+        width: 70px;
+        height: 70px;
+        text-align:center;
+        text-decoration: none;
+        margin-left: 30px;
+        vertical-align: top;
+        margin-right: -25px;
+        transition-duration: 0.15s;
+    }
+}
